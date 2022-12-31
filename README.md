@@ -79,7 +79,7 @@ A dapp user is identified by their wallet on Polygon / Ethereum. In the future, 
    - DAOs or web3 communities they've joined
    - Dapps they've connected to 
    
-- A dapp user can "bookmark" or subscribe to wallets they have not interacted with by using reward points. The cost of bookmarking a non-interacted wallet will depend on how popular the wallet is (ex. known leader, whale, etc.)
+- A dapp user can "bookmark" or subscribe to wallets they have not interacted with by using reward points. The cost of bookmarking a non-interacted wallet will depend on how popular the wallet is (ex. known leader, whale, etc.).
 
 **Other future features**
 - A dapp user can opt to enable bookmarking, even if the subscriber has not yet interacted with them through the dapp, for no reward points.
@@ -95,7 +95,7 @@ A dapp user is identified by their wallet on Polygon / Ethereum. In the future, 
 - Joining communities and using products of bookmarked wallets.
 - Inviting owners of wallets that are not yet active on the platform.
 
-- A dapp user can redeem the rewards to chat with and bookmark top wallets that they have not interacted with yet (ex. unlocking chat and bookmarking of Vitalik)
+- A dapp user can redeem the rewards to chat with and bookmark top wallets that they have not interacted with yet (ex. unlocking chat and bookmarking of Vitalik).
 
 
 
