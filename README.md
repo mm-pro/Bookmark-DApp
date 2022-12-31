@@ -58,7 +58,7 @@ A dapp user is identified by their wallet on Polygon / Ethereum. In the future, 
 
 **Other future features**
 
-- Get matches by token communities. A dapp user can update their settings to allow only matches from specific token communities (ex. a dapp user who holds a Bored Ape can update a setting to only allow matches of other users who hold a Bored Ape.) 
+- Get matches by token communities. A dapp user can update their settings to allow only matches from specific token communities (ex. a dapp user who holds a Bored Ape can update a setting to only allow matches of other users who hold a Bored Ape.).
 
 ### Web3 Help Forum
 
