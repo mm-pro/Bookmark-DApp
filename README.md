@@ -1,6 +1,10 @@
 # Bookmark DApp
 Superconnector of like-people based on their web3 identities
 
+## Project Links
+
+[Figma Link](https://www.figma.com/file/kedyXC9PQtMLkAK18nGhOX/Bookmark-DApp?node-id=13%3A16&t=8xJsfHHe56Rao4tH-1)
+
 ## Summary
 
 Bookmark is a superconnector of like-minded people based on their web3 identities. Make web3 friends, learn from the best in the space, and stay up-to-date with their web3 activity.
