@@ -26,7 +26,6 @@ const BookmarkList = () => {
     setNumber(event.selected + 1);
   };
 
-
   return (
     <div className="flex flex-col">
       <h1 className="mt-5 mb-2 text-lg">
