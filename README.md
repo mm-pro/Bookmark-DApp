@@ -3,7 +3,7 @@ Superconnector of like-people based on their web3 identities
 
 ## Project Links
 
-[Figma Link](https://www.figma.com/file/kedyXC9PQtMLkAK18nGhOX/Bookmark-DApp?node-id=13%3A16&t=8xJsfHHe56Rao4tH-1)
+[Figma Link](https://www.figma.com/file/kedyXC9PQtMLkAK18nGhOX/Bookmark-DApp?node-id=0%3A1)
 
 ## Summary
 
@@ -53,12 +53,28 @@ Contextualizing wallet activity into listings of products and communities used b
 
 A dapp user is identified by their wallet on Polygon / Ethereum. In the future, a dapp user can connect multiple wallets on different chains. 
 
+**Sign in page**:
+
+![Bookmark DApp-1](https://user-images.githubusercontent.com/38402540/211172283-1697074e-fe77-4b74-934c-3ba94bf02b18.png)
+
+**Main dashboard with all core features**:
+
+![Bookmark DApp-2](https://user-images.githubusercontent.com/38402540/211172297-6a7f3ac7-f32c-4d39-9d6c-b126087543ad.png)
+
 ### Weekly Matches
 
 - A dapp user can sign up for weekly matches of wallets that are similar to theirs. 
 - Wallet profile matches are calculated as a percentage and are based on similar token and NFT ownership, DAO voting, and Push Protocol channel memberships. 
 - A dapp user is notified of a match on the dapp dashboard and to communication channels that they linked to their profile.
-- A text chat powered by XMTP and ability to start a video chat powered by Huddle are created upon a match. 
+- A text chat powered by XMTP and ability to start a video chat powered by Huddle are created upon a match.
+
+**Chat with all matches**:
+
+![Bookmark DApp-3](https://user-images.githubusercontent.com/38402540/211172304-64176ce2-3cc1-4509-b647-e22aec3c69da.png)
+
+**Call with a match**:
+
+![Bookmark DApp-4](https://user-images.githubusercontent.com/38402540/211172308-02771c59-6d5f-4eef-8788-a5dcc3fe20d2.png)
 
 **Other future features**
 
@@ -69,6 +85,9 @@ A dapp user is identified by their wallet on Polygon / Ethereum. In the future, 
 - A dapp user can post questions on any web3-related topics from NFTs to entrepreneurship to smart contracts. They can list if they prefer an answer via a live call or as a text-based post.
 - The question post will show a link to the profile of the original poster, question, and their preferred reply method. 
 - Each question post, no matter their preferred reply method, will allow responders to post a text reply, schedule a video call meeting, or request an impromptu video call meeting if the original poster is online.
+
+**Example of question post**:
+![Bookmark DApp-7](https://user-images.githubusercontent.com/38402540/211172319-8ddd28e7-8ff8-4662-94c3-082f7e220340.png)
 
 **Other future features**
 - Token-gated posts. A dapp user can allow holders of certain tokens to reply.
@@ -82,6 +101,9 @@ A dapp user is identified by their wallet on Polygon / Ethereum. In the future, 
    - their token and NFT investments
    - DAOs or web3 communities they've joined
    - Dapps they've connected to 
+
+**Example of newsletter**:
+![Bookmark DApp-6](https://user-images.githubusercontent.com/38402540/211172325-810b716f-df2d-44ff-b8e1-77d401de1cf2.png)
    
 - A dapp user can "bookmark" or subscribe to wallets they have not interacted with by using reward points. The cost of bookmarking a non-interacted wallet will depend on how popular the wallet is (ex. known leader, whale, etc.).
 
