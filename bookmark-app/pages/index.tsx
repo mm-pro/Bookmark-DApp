@@ -1,3 +1,4 @@
+import React from "react";
 import Dashboard from "../components/Dashboard";
 import Signup from "../components/Signup";
 import WalletButtons from "../components/WalletButtons";

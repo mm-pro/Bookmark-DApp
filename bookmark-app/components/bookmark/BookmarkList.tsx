@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import BookmarkProfile from "./BookmarkProfile";
 import * as PushAPI from "@pushprotocol/restapi";
 import ReactPaginate from "react-paginate";
+import { useWallet } from "@wallet01/react";
 
 const BookmarkList = () => {
+  const { address } = useWallet();
   const [number, setNumber] = useState<number>(1);
   const [channelsData, setChannelsData] = useState<any[]>([]);
 
@@ -18,7 +20,7 @@ const BookmarkList = () => {
       setChannelsData(channelsData);
     }
     getChannelsData();
-  }, [number]);
+  }, [number, setChannelsData]);
 
   const handlePageClick = (event: {
     selected: number;
@@ -39,7 +41,8 @@ const BookmarkList = () => {
                   <BookmarkProfile
                     key={channel.channel}
                     name={channel.name}
-                    address={channel.channel}
+                    channelAddress={channel.channel}
+                    userAddress={address}
                     iconLink={channel.icon}
                   />
                 ))

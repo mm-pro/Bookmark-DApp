@@ -6,6 +6,7 @@ import {
   InjectedConnector,
   WalletconnectConnector,
 } from "@wallet01/evm";
+import React from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   const desiredConnectors = [
