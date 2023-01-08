@@ -15,6 +15,7 @@ const BookmarkProfile = ({
   iconLink,
   userAddress,
 }: BookmarkProfileProps) => {
+  const [ensName, setEnsName] = useState<string | undefined>();
   const [subscribedChannelsData, setSubscribedChannelsData] = useState<any[]>(
     []
   );
@@ -23,6 +24,16 @@ const BookmarkProfile = ({
   if (window.ethereum) {
     provider = new ethers.providers.Web3Provider(window.ethereum);
   }
+
+  useEffect(() => {
+    async function getEnsName() {
+      if (channelAddress && provider) {
+        const name = await provider.lookupAddress(channelAddress);
+        if (name) setEnsName(name);
+      }
+    }
+    getEnsName();
+  }, []);
 
   const signer: any = useMemo(() => {
     if (!userAddress || !provider) return;
@@ -41,7 +52,7 @@ const BookmarkProfile = ({
 
   useEffect(() => {
     getSubscribedChannelsData();
-  }, [])
+  }, []);
 
   const obj = useMemo(() => {
     return subscribedChannelsData.find((o) => o.channel === channelAddress);
@@ -83,8 +94,14 @@ const BookmarkProfile = ({
     optout;
   }
 
-  const shortenedAddress = `${channelAddress.slice(0, 5)}...${channelAddress.slice(channelAddress.length - 4,channelAddress.length)}`
-  
+  const shortenedAddress = `${channelAddress.slice(
+    0,
+    5
+  )}...${channelAddress.slice(
+    channelAddress.length - 4,
+    channelAddress.length
+  )}`;
+
   return (
     <div className="flex flex-col justify-center max-w-xs shadow-md rounded-xl px-5 py-10 dark:bg-gray-900 dark:text-gray-100">
       {obj ? (
@@ -113,9 +130,7 @@ const BookmarkProfile = ({
             {name.slice(0, 15)}
             {name.length > 15 && "..."}
           </h2>
-          <p className="text-md dark:text-gray-400">
-            {shortenedAddress}
-          </p>
+          <p className="text-md dark:text-gray-400">{ensName ? ensName : shortenedAddress}</p>
         </div>
       </div>
     </div>
