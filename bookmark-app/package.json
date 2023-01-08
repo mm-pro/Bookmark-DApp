@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@huddle01/huddle01-iframe": "^0.0.8",
     "@next/font": "13.1.1",
     "@pushprotocol/restapi": "^0.2.2",
     "@types/node": "18.11.18",

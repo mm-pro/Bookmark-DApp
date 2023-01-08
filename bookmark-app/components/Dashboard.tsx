@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useWallet } from "@wallet01/react";
 import BookmarkList from "./bookmark/BookmarkList";
-import { ethers } from "ethers";
+import MatchSignup from "./match/MatchSignup";
 
 const Dashboard = () => {
   const { address, disconnect } = useWallet();
@@ -15,6 +15,7 @@ const Dashboard = () => {
       >
         Disconnect
       </button>
+      <MatchSignup />
       <BookmarkList />
     </div>
   );
