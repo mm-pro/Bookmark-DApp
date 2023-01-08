@@ -5,6 +5,14 @@ Superconnector of like-people based on their web3 identities
 
 [Figma Link](https://www.figma.com/file/kedyXC9PQtMLkAK18nGhOX/Bookmark-DApp?node-id=0%3A1)
 
+## Start local project
+
+```
+cd bookmark-app
+yarn 
+yarn dev
+```
+
 ## Summary
 
 Bookmark is a superconnector of like-minded people based on their web3 identities. Make web3 friends, learn from the best in the space, and stay up-to-date with their web3 activity.
