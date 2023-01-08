@@ -19,7 +19,7 @@ const BookmarkProfile = ({
     []
   );
 
-  let provider;
+  let provider: ethers.providers.Web3Provider;
   if (window.ethereum) {
     provider = new ethers.providers.Web3Provider(window.ethereum);
   }
