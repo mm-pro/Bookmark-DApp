@@ -4,6 +4,7 @@ Superconnector of like-minded people based on their web3 identities
 ## Project Links
 
 [Figma Link](https://www.figma.com/file/kedyXC9PQtMLkAK18nGhOX/Bookmark-DApp?node-id=0%3A1)
+
 [Video Demo](https://youtu.be/J4QTiehvpbI)
 
 ## Start local project
