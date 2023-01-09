@@ -20,7 +20,7 @@ const Dashboard = () => {
       }
     }
     getEnsName();
-  }, []);
+  }, [address]);
 
   return (
     <div className="flex flex-col w-full font-body p-10">

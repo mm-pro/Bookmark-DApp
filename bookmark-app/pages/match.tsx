@@ -23,7 +23,7 @@ export default function Match() {
     return nftsOwnedArray.filter(function(item: string) {
         return item !== userAddress.toString();
     })
-  }, [nftsOwned]);
+  }, [nftsOwned, userAddress]);
 
   const randomNumber = Math.floor(Math.random() * getContractOwners?.length);
   const randomAddress = getContractOwners?.[randomNumber];
