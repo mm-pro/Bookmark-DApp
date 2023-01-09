@@ -1,6 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
+/* eslint-disable @next/next/no-img-element */
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import * as PushAPI from "@pushprotocol/restapi";
 import { ethers } from "ethers";
+import Image from 'next/image';
 
 type BookmarkProfileProps = {
   name: string;
@@ -20,10 +22,11 @@ const BookmarkProfile = ({
     []
   );
 
-  let provider: ethers.providers.Web3Provider;
-  if (window.ethereum) {
-    provider = new ethers.providers.Web3Provider(window.ethereum);
-  }
+  const provider: ethers.providers.Web3Provider | undefined = useMemo(() => {
+    if (window.ethereum) {
+      return new ethers.providers.Web3Provider(window.ethereum);
+    }
+  }, []);
 
   useEffect(() => {
     async function getEnsName() {
@@ -33,14 +36,14 @@ const BookmarkProfile = ({
       }
     }
     getEnsName();
-  }, []);
+  }, [channelAddress, provider]);
 
   const signer: any = useMemo(() => {
     if (!userAddress || !provider) return;
     return provider.getSigner();
-  }, [userAddress]);
+  }, [provider, userAddress]);
 
-  async function getSubscribedChannelsData() {
+  const getSubscribedChannelsData = useCallback(async () => {
     const subscriptions = await PushAPI.user.getSubscriptions({
       user: `eip155:5:${userAddress}`,
       env: "staging",
@@ -48,7 +51,7 @@ const BookmarkProfile = ({
     if (subscriptions) {
       setSubscribedChannelsData(subscriptions);
     }
-  }
+  }, [userAddress])
 
   useEffect(() => {
     getSubscribedChannelsData();
@@ -110,6 +113,7 @@ const BookmarkProfile = ({
           alt="Subscribe Bookmark icon"
           className="flex w-8 h-8"
           onClick={() => channelOptOut()}
+
         />
       ) : (
         <img
@@ -117,6 +121,7 @@ const BookmarkProfile = ({
           alt="Subscribe Bookmark icon"
           className="flex w-8 h-8"
           onClick={() => channelOptIn()}
+
         />
       )}
       <img
@@ -130,7 +135,9 @@ const BookmarkProfile = ({
             {name.slice(0, 15)}
             {name.length > 15 && "..."}
           </h2>
-          <p className="text-md dark:text-gray-400">{ensName ? ensName : shortenedAddress}</p>
+          <p className="text-md dark:text-gray-400">
+            {ensName ? ensName : shortenedAddress}
+          </p>
         </div>
       </div>
     </div>
