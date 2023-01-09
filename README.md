@@ -7,6 +7,8 @@ Superconnector of like-minded people based on their web3 identities
 
 [Video Demo](https://youtu.be/J4QTiehvpbI)
 
+[Live Website](https://bookmark-d-app.vercel.app/)
+
 ## Start local project
 
 ```
