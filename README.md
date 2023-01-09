@@ -1,5 +1,5 @@
 # Bookmark DApp
-Superconnector of like-people based on their web3 identities
+Superconnector of like-minded people based on their web3 identities
 
 ## Project Links
 
