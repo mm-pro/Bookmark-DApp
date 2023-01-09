@@ -52,11 +52,11 @@ const BookmarkProfile = ({
 
   useEffect(() => {
     getSubscribedChannelsData();
-  }, []);
+  }, [getSubscribedChannelsData]);
 
   const obj = useMemo(() => {
     return subscribedChannelsData.find((o) => o.channel === channelAddress);
-  }, [subscribedChannelsData]);
+  }, [channelAddress, subscribedChannelsData]);
 
   async function channelOptIn() {
     if (!signer) return;
