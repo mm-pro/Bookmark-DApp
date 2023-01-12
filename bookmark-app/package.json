@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chatscope/chat-ui-kit-react": "^1.9.9",
     "@huddle01/huddle01-iframe": "^0.0.8",
     "@next/font": "13.1.1",
     "@pushprotocol/restapi": "^0.2.2",
@@ -18,6 +19,7 @@
     "@wallet01/core": "^0.4.2",
     "@wallet01/evm": "^0.6.8",
     "@wallet01/react": "^0.5.4",
+    "@xmtp/xmtp-js": "^7.7.3",
     "autoprefixer": "^10.4.13",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
