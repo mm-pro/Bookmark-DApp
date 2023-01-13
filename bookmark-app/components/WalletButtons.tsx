@@ -16,8 +16,7 @@ const ConnectButtons = () => {
   }
 
   return (
-    <div className="flex flex-col w-1/2">
-      <div className="font-body text-sm mt-4">Please make sure that you are connected to Goerli in your wallet</div>
+    <div className="flex flex-col w-1/2 m-auto">
       <div className="grid grid-cols-3 gap-10 items-center mt-5 justify-center">
         {connectors.map((connector) => (
           <button
