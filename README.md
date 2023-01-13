@@ -156,6 +156,8 @@ Currrently, you can bookmark Push Protocol Channels based on any search item. In
 
 - Currently built using Push Protocol. 
 
+Please review issues for [upcoming work](https://github.com/jennifertrin/BookmarkDApp/issues).
+
 
 
 
