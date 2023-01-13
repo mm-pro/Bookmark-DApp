@@ -1,0 +1,4 @@
+type UserProfile @createModel(accountRelation: LIST, description: "Basic profile") {
+  userAccount: String! @string(minLength: 3, maxLength: 50)
+  subscribeToMatches: Boolean! @boolean
+}

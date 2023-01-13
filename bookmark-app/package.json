@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.3",
     "@chatscope/chat-ui-kit-react": "^1.9.9",
+    "@composedb/client": "^0.3.0",
     "@huddle01/huddle01-iframe": "^0.0.8",
     "@next/font": "13.1.1",
     "@pushprotocol/restapi": "^0.2.2",
@@ -33,6 +35,9 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@composedb/devtools": "^0.3.0",
+    "@composedb/devtools-node": "^0.3.0",
+    "@composedb/types": "^0.3.0",
     "auto": "^10.37.6",
     "postcss": "^8.4.20",
     "prefixer": "^0.0.3",
