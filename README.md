@@ -59,7 +59,7 @@ Subscribing to social media notifications and mailing lists leads to spam. Curre
 
 Contextualizing wallet activity into listings of products and communities used by people they admire will help them discover and support the best of web3. 
 
-## Features
+## Full Features
 
 **User Profile**
 
@@ -134,6 +134,27 @@ A dapp user is identified by their wallet on Polygon / Ethereum. In the future, 
 - Inviting owners of wallets that are not yet active on the platform.
 
 - A dapp user can redeem the rewards to chat with and bookmark top wallets that they have not interacted with yet (ex. unlocking chat and bookmarking of Vitalik).
+
+## What's Been Build Thus Far
+
+**User Login**
+
+- Currently built using Huddle01's Wallet01, account address display also resolves to ENS if available
+
+**Weekly Matches**
+
+Currently, the matches are based off of NFT Port's Retrieve NFTs owned by an account API on Polygon. A user receives an instant match when they sign up for matches. In the future, I will utilize other data, machine learning approaches, and store the matches in Cermaic DB so they are not replicated. 
+
+A Huddle01 call is created upon a match. The user has an option to create an XMTP chat with the match. 
+
+- Currently built using NFT Port, Huddle01 IFrame SDK, XMTP
+- A Ceramic Compose DB model for storing user profile data, including if the user wants to sign up for weekly matches, has been created. We are working with Ceramic to properly create the composite.
+
+**Bookmark**
+
+Currrently, you can bookmark Push Protocol Channels based on any search item. In the future, we will enable bookmark user addresses and use NFT Port to index data on a user.
+
+- Currently built using Push Protocol. 
 
 
 
