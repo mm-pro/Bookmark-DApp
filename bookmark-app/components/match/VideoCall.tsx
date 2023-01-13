@@ -14,7 +14,7 @@ export default function VideoCall({ walletAddress }: VideoCallProps) {
   };
 
   return (
-    <div className="flex flex-col mx-auto h-screen w-screen">
+    <div className="flex flex-col mx-auto h-screen w-screen bg-yellow-50">
       <div className="text-xl my-5 mx-auto">
         You&apos;ve been matched with: {walletAddress}
       </div>

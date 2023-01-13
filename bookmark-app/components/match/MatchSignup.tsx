@@ -13,7 +13,7 @@ export default function MatchSignup() {
   );
 
   return (
-    <div className="flex justify-center">
+    <div className="flex mt-4 mb-6">
       <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
         <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
           Weekly matches
