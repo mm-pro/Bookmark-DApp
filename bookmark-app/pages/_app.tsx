@@ -7,6 +7,7 @@ import {
   WalletconnectConnector,
 } from "@wallet01/evm";
 import React from "react";
+import Header from "../components/layout/Header";
 
 export default function App({ Component, pageProps }: AppProps) {
   const desiredConnectors = [
@@ -16,8 +17,10 @@ export default function App({ Component, pageProps }: AppProps) {
   ];
 
   return (
-    <Wallet01 autoConnect={true} connectors={() => desiredConnectors}>
-      <Component {...pageProps} />
-    </Wallet01>
+    <Header>
+      <Wallet01 autoConnect={true} connectors={() => desiredConnectors}>
+        <Component {...pageProps} />
+      </Wallet01>
+    </Header>
   );
 }
