@@ -106,12 +106,12 @@ const BookmarkProfile = ({
   )}`;
 
   return (
-    <div className="flex flex-col justify-center max-w-xs shadow-md rounded-xl px-5 py-10 dark:bg-gray-900 dark:text-gray-100 bg-gray-100">
+    <div className="flex flex-col max-w-xs shadow-md rounded-xl dark:bg-gray-900 dark:text-gray-100 bg-gray-100">
+      <div className="flex w-8 h-8 mt-4 ml-2">
       {obj ? (
         <img
           src="/assets/bookmark-filled.svg"
           alt="Subscribe Bookmark icon"
-          className="flex w-8 h-8"
           onClick={() => channelOptOut()}
 
         />
@@ -119,17 +119,17 @@ const BookmarkProfile = ({
         <img
           src="/assets/bookmark.svg"
           alt="Subscribe Bookmark icon"
-          className="flex w-8 h-8"
           onClick={() => channelOptIn()}
 
         />
       )}
+      </div>
       <img
         src={iconLink}
         alt={`${name} Channel Icon`}
-        className="flex w-16 h-16 mx-auto rounded-full dark:bg-gray-500 aspect-square"
+        className="flex w-16 h-16 mx-auto rounded-full dark:bg-gray-500"
       />
-      <div className="flex space-y-4 text-center divide-y divide-gray-700">
+      <div className="flex space-y-4 text-center divide-y divide-gray-700 px-5 py-10">
         <div className="my-2 space-y-1 w-full">
           <h2 className="mx-auto text-lg font-semibold sm:text-2xl">
             {name.slice(0, 15)}
