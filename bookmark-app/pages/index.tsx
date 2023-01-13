@@ -8,7 +8,7 @@ export default function Home() {
   const { isConnected } = useWallet();
 
   return (
-    <div className="flex h-screen w-screen">
+    <div className="flex h-screen w-screen bg-yellow-50">
       {!isConnected ? (
         <div className="flex flex-row align-middle mx-auto">
           <Signup />

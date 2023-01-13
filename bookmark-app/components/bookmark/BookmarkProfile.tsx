@@ -106,7 +106,7 @@ const BookmarkProfile = ({
   )}`;
 
   return (
-    <div className="flex flex-col justify-center max-w-xs shadow-md rounded-xl px-5 py-10 dark:bg-gray-900 dark:text-gray-100">
+    <div className="flex flex-col justify-center max-w-xs shadow-md rounded-xl px-5 py-10 dark:bg-gray-900 dark:text-gray-100 bg-gray-100">
       {obj ? (
         <img
           src="/assets/bookmark-filled.svg"

@@ -28,7 +28,7 @@ const ConnectButtons = () => {
               });
               toast(connector.name);
             }}
-            className="w-20 h-20 p-3 text-lg flex justify-center items-center leading-relaxed aspect-square rounded-lg border border-slate-600 bg-slate-700"
+            className="w-20 h-20 p-3 text-lg flex justify-center items-center leading-relaxed aspect-square rounded-lg shadow-md bg-white"
           >
             {WalletIcons[connector.name] ?? connector.name}
           </button>
