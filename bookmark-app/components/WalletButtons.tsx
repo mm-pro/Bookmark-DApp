@@ -16,7 +16,7 @@ const ConnectButtons = () => {
   }
 
   return (
-    <div className="flex flex-col w-1/2 m-auto">
+    <div className="flex flex-col px-6 md:w-1/2 md:m-auto">
       <div className="grid grid-cols-3 gap-10 items-center mt-5 justify-center">
         {connectors.map((connector) => (
           <button

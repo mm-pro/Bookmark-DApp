@@ -2,7 +2,7 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <div className="flex flex-col w-1/2 m-auto font-body align-middle p-10">
+    <div className="flex flex-col w-full md:w-1/2 md:m-auto font-body align-middle p-5 md:p-10">
       <div className="text-7xl">
         Sign up <span>for Bookmark</span>
       </div>

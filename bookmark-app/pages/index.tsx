@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex h-screen w-screen bg-yellow-50">
       {!isConnected ? (
-        <div className="flex flex-row align-middle mx-auto">
+        <div className="flex flex-col m-auto md:flex-row align-middle">
           <Signup />
           <WalletButtons />
         </div>
